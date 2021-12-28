@@ -1,22 +1,5 @@
 #include "../common.hpp"
 
-#pragma region insertion sort method
-void insertion_sort(vector<int>& in) 
-{
-    int target, j;
-    for (int i = 1; i < in.size(); i++) {
-        target = in[i];
-        j = i-1;
-        while (j >= 0 && in[j] > target) {
-            in[j+1] = in[j];
-            j--;
-        }
-        in[j+1] = target;
-    }
-}
-#pragma endregion insertion sort method
- 
-#pragma region merge sort method
 void merge(vector<int>& A, int p, int q, int r) 
 {
     // L: [p, q), R: [q, r)
@@ -50,7 +33,6 @@ void merge_sort(vector<int>& A, int p, int r)
         merge(A, p, q, r);
     }
 }
-#pragma endregion merge sort method
 
 
 int main()
