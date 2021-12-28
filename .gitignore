@@ -1,0 +1,17 @@
+build/
+.vscode/
+.git/
+
+
+# c/c++
+*.a
+*.o
+*.out
+*.so
+
+# python
+__pycache__
+.venv/
+
+# others
+cpp/binaryIO/test.bin

@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package rpc_package;
+
+option go_package = "./MySum";
+
+// define a service
+service AddService {
+    // define the interface and data type
+    rpc myAdd (DataRequest) returns (DataReply) {}
+}
+
+// define the data type of request
+message DataRequest {
+    int32 a = 1;
+    int32 b = 2;
+    string msg = 3;
+}
+
+// define the data type of response
+message DataReply {
+    int32 c = 1;
+}

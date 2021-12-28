@@ -1,0 +1,18 @@
+<rpc message-id="02"
+    xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <get>
+        <filter type="subtree">
+            <top xmlns="http://www.h3c.com/netconf/data:1.0">
+                <Ifmgr>
+                    <Interfaces>
+                        <Interface>
+                            <Name></Name>
+                            <InetAddressIPV4></InetAddressIPV4>
+                            <AdminStatus></AdminStatus>
+                        </Interface>
+                    </Interfaces>
+                </Ifmgr>
+            </top>
+        </filter>
+    </get>
+</rpc>
