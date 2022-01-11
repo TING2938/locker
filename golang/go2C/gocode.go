@@ -13,7 +13,7 @@ func Foo(a, b int) int {
 
 //export Bar
 func Bar(s string) {
-	fmt.Println("I am bar, not foo!, %s", s)
+	fmt.Printf("I am bar, not foo! %s\n", s)
 }
 
 func main() {}

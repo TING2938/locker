@@ -53,6 +53,8 @@ set ttimeoutlen=100
 
 " 设置文件编码,主要是避免中文乱码.先注释,后续遇到中文乱码再打开
 "" set fileencodings=utf-8,cp936,big5,latin1
+"" set termencoding=utf-8
+"" set encoding=utf-8
 
 " FIXME 在MS-DOS控制台打开vim时,控制台使用鼠标右键来复制粘贴,设置
 " 全鼠标模式,鼠标右键被映射为visual mode,不能用来复制粘贴,不方便.
