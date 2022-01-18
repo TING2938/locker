@@ -13,6 +13,7 @@ vendor/
 # python
 __pycache__
 .venv/
+.pytorch/
 
 # others
 cpp/binaryIO/test.bin
