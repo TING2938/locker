@@ -68,8 +68,8 @@ typedef struct { void *data; GoInt len; GoInt cap; } GoSlice;
 extern "C" {
 #endif
 
-extern GoInt Foo(GoInt a, GoInt b);
-extern void Bar(GoString s);
+extern GoInt Foo(GoInt p0, GoInt p1);
+extern void Bar(GoString p0);
 
 #ifdef __cplusplus
 }

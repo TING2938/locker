@@ -1,0 +1,6 @@
+[
+    {
+        "name": "cmake setup environment",
+        "environmentSetupScript": "/home/yeting/.bashrc",
+    }
+]
