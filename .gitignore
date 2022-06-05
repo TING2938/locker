@@ -2,13 +2,16 @@ build/
 vendor/
 .vscode/
 .git/
-
+.vs/
 
 # c/c++
 *.a
 *.o
 *.out
 *.so
+*.sln
+*.vcxproj*
+
 
 # python
 __pycache__
