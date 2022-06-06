@@ -3,6 +3,9 @@ vendor/
 .vscode/
 .git/
 .vs/
+x64/
+Debug/
+Release/
 
 # c/c++
 *.a
@@ -20,3 +23,4 @@ __pycache__
 
 # others
 cpp/binaryIO/test.bin
+
