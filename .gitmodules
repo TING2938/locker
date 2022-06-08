@@ -1,0 +1,6 @@
+[submodule "cpp/json_demo/third_party/json"]
+	path = cpp/json_demo/third_party/json
+	url = https://github.com/nlohmann/json
+[submodule "cpp/spdlog_demo/third_party/spdlog"]
+	path = cpp/spdlog_demo/third_party/spdlog
+	url = https://github.com/gabime/spdlog.git
