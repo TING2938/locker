@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.11)
-project(learnPybind11)
+project(pybind11_demo)
 
-add_subdirectory(pybind11)
+add_subdirectory(third_party/pybind11)
 
 add_subdirectory(demo/cppCallPython)
 add_subdirectory(demo/pythonCallCpp)

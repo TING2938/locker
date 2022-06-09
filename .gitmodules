@@ -4,3 +4,6 @@
 [submodule "cpp/spdlog_demo/third_party/spdlog"]
 	path = cpp/spdlog_demo/third_party/spdlog
 	url = https://github.com/gabime/spdlog.git
+[submodule "multi/python_c/pybind11_test/third_party/pybind11"]
+	path = multi/python_c/pybind11_test/third_party/pybind11
+	url = https://github.com/pybind/pybind11.git
