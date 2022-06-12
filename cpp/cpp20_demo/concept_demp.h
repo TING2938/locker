@@ -26,7 +26,7 @@ concept vector_type = requires(T v) {
 	v.size();
 	v.begin();
 	v.end();
-	{v[0]} -> std::same_as<int>;
+	std::convertible_to<decltype(v[0]), int>;
 };
 
 template <vector_type T>
