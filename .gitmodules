@@ -7,3 +7,6 @@
 [submodule "multi/python_c/pybind11_test/third_party/pybind11"]
 	path = multi/python_c/pybind11_test/third_party/pybind11
 	url = https://github.com/pybind/pybind11.git
+[submodule "cpp/eigen_demo/third_party/eigen"]
+	path = cpp/eigen_demo/third_party/eigen
+	url = https://gitlab.com/libeigen/eigen.git
