@@ -7,3 +7,6 @@ add_subdirectory(third_party/spdlog)
 
 add_executable(spdlog_demo example.cpp)
 target_link_libraries(spdlog_demo PRIVATE spdlog::spdlog_header_only)
+
+add_executable(fmt_demo fmt_example.cpp)
+target_link_libraries(fmt_demo PRIVATE spdlog::spdlog_header_only)

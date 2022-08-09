@@ -10,3 +10,6 @@
 [submodule "cpp/eigen_demo/third_party/eigen"]
 	path = cpp/eigen_demo/third_party/eigen
 	url = https://gitlab.com/libeigen/eigen.git
+[submodule "cpp/fmt_demo/third_party/fmt"]
+	path = cpp/fmt_demo/third_party/fmt
+	url = https://github.com/fmtlib/fmt.git
