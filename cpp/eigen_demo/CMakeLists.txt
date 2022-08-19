@@ -3,10 +3,15 @@ project(EigenDemo)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(EIGEN_BUILD_DOC OFF CACHE BOOL "")
-set(BUILD_TESTING OFF CACHE BOOL "")
-set(EIGEN_BUILD_PKGCONFIG OFF CACHE BOOL "")
-add_subdirectory(third_party/eigen)
+include(FetchContent)
+FetchContent_Declare(
+    cpptools
+    GIT_REPOSITORY https://github.com/ting2938/cpptools.git
+    GIT_TAG master
+)
+FetchContent_MakeAvailable(cpptools)
+
+CT_USE_EIGEN()
 
 add_executable(demo demo.cpp)
 target_link_libraries(demo Eigen3::Eigen)
