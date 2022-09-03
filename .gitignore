@@ -24,3 +24,4 @@ __pycache__
 # others
 cpp/binaryIO/test.bin
 
+/leetcode/packages*
