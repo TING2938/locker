@@ -46,9 +46,10 @@ public:
     }
 };
 
-TEST(a, b) {
+TEST(a, b)
+{
     Solution s;
- 
+
     EXPECT_EQ(s.romanToInt("III"), 3);
     EXPECT_EQ(s.romanToInt("IV"), 4);
     EXPECT_EQ(s.romanToInt("IX"), 9);
