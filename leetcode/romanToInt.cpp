@@ -46,7 +46,7 @@ public:
     }
 };
 
-TEST(a, b)
+TEST(leetcode, romanToInt)
 {
     Solution s;
 
