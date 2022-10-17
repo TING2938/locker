@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(leetcode VERSION 0.1.0)
 
+set(CXX_STANDARD 17)
+
 include(FetchContent)
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 set(BUILD_GMOCK OFF CACHE BOOL "" FORCE)
