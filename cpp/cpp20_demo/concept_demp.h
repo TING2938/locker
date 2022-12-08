@@ -36,3 +36,8 @@ auto vector_sum(const T& vec)
 }
 
 
+template <typename T>
+auto vector_sum_v1(const T& vec) requires vector_type<T>
+{
+	return std::accumulate(vec.begin(), vec.end(), 0);
+}
