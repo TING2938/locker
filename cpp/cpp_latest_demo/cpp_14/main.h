@@ -18,7 +18,10 @@ namespace cpp14
 
 		binaryText();
 		make_unique_demo();
-
+		
+		print_sequence(std::integer_sequence<int, 9, 4, 2, 3>{});
+		exchange_demo();
+		quoted_demo();
 		std::cout << "cpp 14 demo end ===============================" << std::endl;
 	}
 }
