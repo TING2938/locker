@@ -9,7 +9,7 @@ module;
 
 export module concept_demo;
 
-export namespace cpp20 {
+export namespace cpp20::concept_demo {
 	template <typename T>
 	concept signed_number = std::is_arithmetic_v<T> && std::is_signed_v<T>;
 

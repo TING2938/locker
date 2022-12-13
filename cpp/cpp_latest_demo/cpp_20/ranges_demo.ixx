@@ -10,7 +10,7 @@ export module ranges_demo;
 
 namespace views = std::views;
 
-export namespace cpp20 {
+export namespace cpp20::range_demo {
 	struct Employee {
 		std::string name;
 		int id;

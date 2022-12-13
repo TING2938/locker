@@ -13,7 +13,7 @@ public:
 
 export using Secret_alias = Secret;
 
-export namespace A
+export namespace cpp20::module_demo
 {
 	Secret MyFunc(int a, int b)
 	{

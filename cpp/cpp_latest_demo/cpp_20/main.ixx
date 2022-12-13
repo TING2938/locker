@@ -11,6 +11,7 @@ export module cpp20;
 
 import ranges_demo;
 import concept_demo;
+import feature;
 import A.test;
 
 export namespace cpp20 {
@@ -20,13 +21,14 @@ export namespace cpp20 {
 
 		std::vector<int> vec{ 3, 1, 7, 9 };
 
-		std::cout << std::format("hello world {}, {}\n", vec.at(0), vector_sum(vec));
-		vector_sum_v1(vec);
-		ranges_demo();
+		std::cout << std::format("hello world {}, {}\n", vec.at(0), concept_demo::vector_sum(vec));
+		concept_demo::vector_sum_v1(vec);
+		range_demo::ranges_demo();
 
-		Secret aa = A::MyFunc(1, 2);
-
+		Secret aa = module_demo::MyFunc(1, 2);
 		std::cout << "MyFunc: " << aa._a << std::endl;
+
+		feature::main();
 
 		std::cout << "cpp 20 demo end ===============================" << std::endl;
 	}
