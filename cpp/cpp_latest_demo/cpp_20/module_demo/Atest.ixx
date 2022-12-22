@@ -4,6 +4,10 @@ module;
 
 export module A.test;
 
+export import :part1;
+import :part2;
+import :part3;
+
 export class Secret
 {
 public:
@@ -17,7 +21,8 @@ export namespace cpp20::module_demo
 {
 	Secret MyFunc(int a, int b)
 	{
-		std::cout << "in MyFunc: " << a << " " << b << std::endl;
+		int c = part2::mysum(a, b);
+		std::cout << "in MyFunc: " << a << " " << b << c <<  std::endl;
 		return a + 2 * b;
 	}
 }

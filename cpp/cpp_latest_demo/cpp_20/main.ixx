@@ -26,8 +26,8 @@ export namespace cpp20 {
 		range_demo::ranges_demo();
 
 		Secret aa = module_demo::MyFunc(1, 2);
-		std::cout << "MyFunc: " << aa._a << std::endl;
-
+		std::cout << "MyFunc: " << aa._a  << " " << module_demo::part1::mysum(1, 2) << std::endl;
+		
 		feature::main();
 
 		std::cout << "cpp 20 demo end ===============================" << std::endl;

@@ -8,6 +8,6 @@ int main()
 	cpp14::main();
 	cpp17::main();
 	cpp20::main();
-	
+
 	return 0;
 }
