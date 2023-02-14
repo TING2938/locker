@@ -15,3 +15,6 @@ CT_USE_SPDLOG()
 
 add_executable(fmt_demo fmt_example.cpp)
 target_link_libraries(fmt_demo fmt::fmt-header-only)
+
+add_executable(spdlog_demo example.cpp)
+target_link_libraries(spdlog_demo cpptools::spdlog)

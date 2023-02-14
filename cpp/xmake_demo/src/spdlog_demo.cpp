@@ -23,7 +23,7 @@ void spdlog_example()
     std::vector<int> vec = {1, 3, 5, 67};
 
     auto logger = spdlog::basic_logger_mt("ln", "logs/ln.dat");
-    logger->error("vector print: {}", vec);
+
     logger->info("vector print: {}", vec);
 }
 
