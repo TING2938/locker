@@ -11,6 +11,7 @@ export module cpp20;
 
 import ranges_demo;
 import concept_demo;
+import coroutines_demo;
 import feature;
 import A.test;
 
@@ -29,6 +30,8 @@ export namespace cpp20 {
 		std::cout << "MyFunc: " << aa._a  << " " << module_demo::part1::mysum(1, 2) << std::endl;
 		
 		feature::main();
+
+		coroutines_demo::main();
 
 		std::cout << "cpp 20 demo end ===============================" << std::endl;
 	}
