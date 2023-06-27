@@ -1,6 +1,6 @@
 #include "pch.h"
 
-// url:
+// url: https://leetcode.cn/problems/3sum/
 
 class Solution
 {
@@ -8,27 +8,35 @@ public:
     vector<vector<int>> threeSum(vector<int>& s)
     {
         sort(s.begin(), s.end());
+        int N = s.size();
         vector<vector<int>> ret;
-        for (auto itk = s.begin(); itk != s.end(); ++itk) {
-            if (*itk > 0) {
-                break;
-            }
-
-            auto itm = itk + 1;
-            auto itn = s.end() - 1;
-            while (itm < itn) {
-                auto it_sum = *itk + *itm + *itn;
-                if (it_sum > 0) {
-                    --itn;
-                } else if (it_sum < 0) {
-                    ++itm;
-                } else {
-                    ret.push_back({*itk, *itm, *itn});
+        // i, j, k
+        for (int i = 0; i < N - 2; increase(i, s)) {
+            int k = N;
+            for (int j = i + 1; j < k; increase(j, s)) {
+                for (; k > j; k--) {
+                    int tsum = s[i] + s[j] + s[k];
+                    if (tsum > 0) {
+                        continue;
+                    }
+                    if (tsum == 0) {
+                        ret.push_back({s[i], s[j], s[k]});
+                    }
                     break;
                 }
             }
         }
         return ret;
+    }
+
+private:
+    void increase(int& idx, const vector<int>& s)
+    {
+        int origin = s[idx];
+        idx++;
+        while (idx < s.size() && s[idx] == origin) {
+            idx++;
+        }
     }
 };
 
