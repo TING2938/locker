@@ -48,7 +48,7 @@ TEST(leetcode, threeSum)
     vector<vector<int>> ret;
 
     vec = {-1, 0, 1, 0, 2, -2};
-    ret = {{-2, 0, 2}, {-1, 0, 1, 1}};
+    ret = {{-2, 0, 2}, {-1, 0, 1}};
     EXPECT_EQ(s.threeSum(vec), ret);
 
     vec = {-1, 0, 1, 2, -1, -4};
