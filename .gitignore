@@ -25,3 +25,4 @@ __pycache__
 cpp/binaryIO/test.bin
 
 /leetcode/packages*
+flagged/
