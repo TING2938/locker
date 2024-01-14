@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-if [[ $# < 1 ]]; then
-    echo "please input your problem name"
+if [[ $# < 2 ]]; then
+    echo "please input your problem name and number"
     exit
 fi
 
-cp template.cpp ${1}.cpp
-sed -i "s/ProblemName/${1}/g" ${1}.cpp
+fnm=${2}.${1}.cpp
+cp template.cpp ${fnm}
+sed -i "s/ProblemName/${1}/g" ${fnm}
+sed -i "s/ProblemNumber/${2}/g" ${fnm}

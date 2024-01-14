@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(leetcode VERSION 0.1.0)
 
-set(CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 
 include(FetchContent)
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
@@ -14,6 +14,7 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(tag_gtest)
 
 include_directories(include)
+add_compile_options(-fconcepts)
 # build target
 
 file(GLOB LEETCODE_SRC_FILES *.cpp)

@@ -1,20 +1,14 @@
+#include "list_utils.h"
 #include "pch.h"
-
 // url: https://leetcode.cn/problems/remove-nth-node-from-end-of-list/description/
 
 struct ListNode
 {
-    int val;
+    double val;
     ListNode* next;
     ListNode() : val(0), next(nullptr) {}
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode* next) : val(x), next(next) {}
-
-    ListNode* add(int value)
-    {
-        this->next = new ListNode(value);
-        return this->next;
-    }
 };
 
 class Solution
@@ -49,27 +43,13 @@ public:
 
 TEST(leetcode, removeNthFromEnd)
 {
-    auto head = new ListNode(1);
-    head->add(2);
-    //->add(3)->add(4)->add(5);
-
-    auto cur = head;
-    while (cur != nullptr) {
-        cout << cur->val << " ";
-        cur = cur->next;
-    }
-    cout << endl;
-
+    auto head = create_list<ListNode>({1, 2, 3});
+    print_list(head);
 
     Solution s;
     head = s.removeNthFromEnd(head, 2);
 
-    cur = head;
-    while (cur != nullptr) {
-        cout << cur->val << " ";
-        cur = cur->next;
-    }
-    cout << endl;
+    print_list(head);
 }
 
 // 双指针法
