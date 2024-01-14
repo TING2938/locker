@@ -5,7 +5,7 @@ if [[ $# < 2 ]]; then
     exit
 fi
 
-fnm=${2}.${1}.cpp
+fnm=${2}_${1}.cpp
 cp template.cpp ${fnm}
 sed -i "s/ProblemName/${1}/g" ${fnm}
 sed -i "s/ProblemNumber/${2}/g" ${fnm}

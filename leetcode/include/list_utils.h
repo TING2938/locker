@@ -34,12 +34,18 @@ auto create_list(initializer_list<T> init)
 }
 
 template <Listable List>
-void print_list(List* head)
+ostream& operator<<(ostream& os, List* head)
 {
     auto cur = head;
-    while (cur != nullptr) {
-        cout << cur->val << " ";
+    os << "{";
+    if (cur != nullptr) {
+        os << cur->val;
         cur = cur->next;
     }
-    cout << endl;
+    while (cur != nullptr) {
+        os << ", " << cur->val;
+        cur = cur->next;
+    }
+    os << "}";
+    return os;
 }

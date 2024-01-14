@@ -44,12 +44,12 @@ public:
 TEST(leetcode, removeNthFromEnd)
 {
     auto head = create_list<ListNode>({1, 2, 3});
-    print_list(head);
+    cout << head << endl;
 
     Solution s;
-    head = s.removeNthFromEnd(head, 2);
+    head = s.removeNthFromEnd(head, 1);
 
-    print_list(head);
+    cout << head << endl;
 }
 
 // 双指针法
