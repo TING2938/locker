@@ -13,13 +13,13 @@
 // };
 
 template <typename List>
-concept Listable = requires(List l) {
+concept ListLike = requires(List l) {
     l.val;
     l.next;
 };
 
 
-template <Listable List, typename T>
+template <ListLike List, typename T>
 auto create_list(initializer_list<T> init)
 {
     auto pre = new List();
@@ -33,7 +33,7 @@ auto create_list(initializer_list<T> init)
     return cur;
 }
 
-template <Listable List>
+template <ListLike List>
 ostream& operator<<(ostream& os, List* head)
 {
     auto cur = head;
