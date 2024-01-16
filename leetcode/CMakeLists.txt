@@ -14,7 +14,9 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(tag_gtest)
 
 include_directories(include)
-add_compile_options(-fconcepts)
+if(UNIX)
+    add_compile_options(-fconcepts)
+endif()
 # build target
 
 file(GLOB LEETCODE_SRC_FILES *.cpp)
