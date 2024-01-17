@@ -27,6 +27,31 @@ public:
             make_order(vec, root->right, order + 1);
         }
     }
+    vector<vector<int>> levelOrder2(TreeNode* root)
+    {
+        vector<vector<int>> ret;
+        if (!root) {
+            return ret;
+        }
+        queue<TreeNode*> q;
+        q.push(root);
+
+        while (!q.empty()) {
+            ret.push_back({});
+            int level = q.size();
+            for (int i = 0; i < level; i++) {
+                auto node = q.front();
+                q.pop();
+                ret.back().push_back(node->val);
+                if (node->left)
+                    q.push(node->left);
+                if (node->right)
+                    q.push(node->right);
+            }
+        }
+
+        return ret;
+    }
 };
 
 TEST(leetcode, levelOrder)
@@ -37,5 +62,5 @@ TEST(leetcode, levelOrder)
                              new TreeNode(3, new TreeNode(6), new TreeNode(7)));
     cout << tree << endl;
 
-    cout << s.levelOrder(tree) << endl;
+    cout << s.levelOrder2(tree) << endl;
 }
