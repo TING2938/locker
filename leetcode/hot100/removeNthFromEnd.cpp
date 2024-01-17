@@ -2,15 +2,6 @@
 #include "pch.h"
 // url: https://leetcode.cn/problems/remove-nth-node-from-end-of-list/description/
 
-struct ListNode
-{
-    double val;
-    ListNode* next;
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode* next) : val(x), next(next) {}
-};
-
 class Solution
 {
 public:

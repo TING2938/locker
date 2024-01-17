@@ -3,14 +3,14 @@
 #include <type_traits>
 
 #include "pch.h"
-// struct ListNode
-// {
-//     int val;
-//     ListNode* next;
-//     ListNode() : val(0), next(nullptr) {}
-//     ListNode(int x) : val(x), next(nullptr) {}
-//     ListNode(int x, ListNode* next) : val(x), next(next) {}
-// };
+struct ListNode
+{
+    int val;
+    ListNode* next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode* next) : val(x), next(next) {}
+};
 
 template <typename List>
 concept ListLike = requires(List l) {
