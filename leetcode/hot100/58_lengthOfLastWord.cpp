@@ -17,7 +17,7 @@ public:
     }
 };
 
-TEST(leetcode, lengthOfLastWord)
+int main()
 {
     Solution s;
 

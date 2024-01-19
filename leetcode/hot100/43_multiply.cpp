@@ -72,7 +72,7 @@ public:
     }
 };
 
-TEST(leetcode, multiply)
+int main()
 {
     Solution s;
     cout << s.multiply("990", "0") << endl;

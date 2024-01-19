@@ -18,7 +18,7 @@ public:
     }
 };
 
-TEST(leetcode, maxDepth)
+int main()
 {
     Solution s;
 

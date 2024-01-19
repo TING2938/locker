@@ -19,9 +19,9 @@ public:
     }
 };
 
-TEST(leetcode, replaceSpace)
+int main()
 {
     Solution s;
 
-    EXPECT_EQ(s.replaceSpace("hello, world"), "hello,%20world");
+    assert(s.replaceSpace("hello, world") == "hello,%20world");
 }

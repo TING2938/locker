@@ -22,15 +22,15 @@ public:
     }
 };
 
-TEST(leetcode, maxArea)
+int main()
 {
     Solution s;
     vector<int> height;
 
 
     height = {1, 8, 6, 2, 5, 4, 8, 3, 7};
-    EXPECT_EQ(s.maxArea(height), 49);
+    assert(s.maxArea(height) == 49);
 
     height = {1, 1};
-    EXPECT_EQ(s.maxArea(height), 1);
+    assert(s.maxArea(height) == 1);
 }

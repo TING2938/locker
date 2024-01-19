@@ -31,12 +31,12 @@ public:
     }
 };
 
-TEST(leetcode, isPalindrome)
+int main()
 {
     Solution s;
 
-    EXPECT_TRUE(s.isPalindrome(121));
-    EXPECT_TRUE(s.isPalindrome(123321));
-    EXPECT_FALSE(s.isPalindrome(122));
-    EXPECT_FALSE(s.isPalindrome(123421));
+    assert(s.isPalindrome(121));
+    assert(s.isPalindrome(123321));
+    assert(s.isPalindrome(122));
+    assert(s.isPalindrome(123421));
 }

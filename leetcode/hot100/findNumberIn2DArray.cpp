@@ -24,7 +24,7 @@ public:
     }
 };
 
-TEST(leetcode, findNumberIn2DArray)
+int main()
 {
     Solution s;
 
@@ -36,5 +36,5 @@ TEST(leetcode, findNumberIn2DArray)
         {3, 6, 9, 16, 22},
         {10, 13, 14, 17, 24},
     };
-    EXPECT_TRUE(s.findNumberIn2DArray(matrix, 18));
+    assert(s.findNumberIn2DArray(matrix, 18));
 }

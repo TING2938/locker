@@ -30,7 +30,7 @@ public:
     }
 };
 
-TEST(leetcode, generateParenthesis)
+int main()
 {
     Solution s;
     auto ret = s.generateParenthesis(2);

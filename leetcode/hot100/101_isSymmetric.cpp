@@ -32,7 +32,7 @@ public:
     }
 };
 
-TEST(leetcode, isSymmetric)
+int main()
 {
     Solution s;
     auto tree = new TreeNode(1, new TreeNode(2, new TreeNode(4), new TreeNode(5)),

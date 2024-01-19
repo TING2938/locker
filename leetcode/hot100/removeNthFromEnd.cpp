@@ -32,7 +32,7 @@ public:
     }
 };
 
-TEST(leetcode, removeNthFromEnd)
+int main()
 {
     auto head = create_list<ListNode>({1, 2, 3});
     cout << head << endl;

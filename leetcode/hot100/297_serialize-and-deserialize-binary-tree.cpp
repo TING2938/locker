@@ -64,7 +64,7 @@ public:
 };
 
 
-TEST(leetcode, serialize_and_deserialize_binary_tree)
+int main()
 {
     auto root = new TreeNode(1, new TreeNode(2, nullptr, new TreeNode(5)),
                              new TreeNode(3, new TreeNode(6, new TreeNode(9), nullptr), new TreeNode(7)));

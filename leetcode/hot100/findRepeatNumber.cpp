@@ -7,7 +7,7 @@ class Solution
 public:
     int findRepeatNumber(vector<int>& nums)
     {
-        set<int> unique;
+        std::set<int> unique;
         for (auto&& v : nums) {
             if (unique.count(v)) {
                 return v;
@@ -19,11 +19,11 @@ public:
     }
 };
 
-TEST(leetcode, findRepeatNumber)
+int main()
 {
     Solution s;
     vector<int> nums;
 
     nums = {2, 3, 1, 0, 2, 5, 3};
-    EXPECT_EQ(s.findRepeatNumber(nums), 2);
+    assert(s.findRepeatNumber(nums) == 2);
 }

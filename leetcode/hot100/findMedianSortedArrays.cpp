@@ -40,7 +40,7 @@ public:
     }
 };
 
-TEST(leetcode, findMedianSortedArrays)
+int main()
 {
     Solution s;
     cout << s.findMedianSortedArrays({1, 3, 5}, {4, 6});

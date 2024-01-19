@@ -15,7 +15,7 @@ public:
     }
 };
 
-TEST(leetcode, ProblemName)
+int main()
 {
     Solution s;
 }

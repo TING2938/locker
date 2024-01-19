@@ -42,13 +42,13 @@ public:
     }
 };
 
-TEST(leetcode, intToRoman)
+int main()
 {
     Solution s;
 
-    EXPECT_EQ(s.intToRoman(1994), "MCMXCIV");
-    EXPECT_EQ(s.intToRoman(58), "LVIII");
-    EXPECT_EQ(s.intToRoman(9), "IX");
-    EXPECT_EQ(s.intToRoman(4), "IV");
-    EXPECT_EQ(s.intToRoman(3), "III");
+    assert(s.intToRoman(1994) == "MCMXCIV");
+    assert(s.intToRoman(58) == "LVIII");
+    assert(s.intToRoman(9) == "IX");
+    assert(s.intToRoman(4) == "IV");
+    assert(s.intToRoman(3) == "III");
 }

@@ -25,7 +25,7 @@ public:
     }
 };
 
-TEST(leetcode, reversePrint)
+int main()
 {
     Solution s;
 
@@ -34,5 +34,5 @@ TEST(leetcode, reversePrint)
     head->next->next = new ListNode(2);
     std::vector<int> ret{2, 3, 1};
 
-    EXPECT_EQ(s.reversePrint(head), ret);
+    assert(s.reversePrint(head) == ret);
 }

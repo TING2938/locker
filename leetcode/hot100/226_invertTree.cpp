@@ -20,7 +20,7 @@ public:
     }
 };
 
-TEST(leetcode, invertTree)
+int main()
 {
     Solution s;
 

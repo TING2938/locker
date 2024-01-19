@@ -95,8 +95,8 @@ private:
     };
 };
 
-TEST(leetcode, letterCombinations)
+int main()
 {
     Solution s;
-    EXPECT_EQ(s.letterCombinations("23"), vector<string>{});
+    assert(s.letterCombinations("23") == vector<string>{});
 }

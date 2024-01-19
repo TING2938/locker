@@ -20,7 +20,7 @@ public:
     }
 };
 
-TEST(leetcode, rotate)
+int main()
 {
     Solution s;
 

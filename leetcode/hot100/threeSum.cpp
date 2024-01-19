@@ -40,7 +40,7 @@ private:
     }
 };
 
-TEST(leetcode, threeSum)
+int main()
 {
     Solution s;
 
@@ -49,17 +49,17 @@ TEST(leetcode, threeSum)
 
     vec = {-1, 0, 1, 0, 2, -2};
     ret = {{-2, 0, 2}, {-1, 0, 1}};
-    EXPECT_EQ(s.threeSum(vec), ret);
+    assert(s.threeSum(vec) == ret);
 
     vec = {-1, 0, 1, 2, -1, -4};
     ret = {{-1, -1, 2}, {-1, 0, 1}};
-    EXPECT_EQ(s.threeSum(vec), ret);
+    assert(s.threeSum(vec) == ret);
 
     vec = {0, 0, 0};
     ret = {{0, 0, 0}};
-    EXPECT_EQ(s.threeSum(vec), ret);
+    assert(s.threeSum(vec) == ret);
 
     vec = {0, 1, 1};
     ret = {};
-    EXPECT_EQ(s.threeSum(vec), ret);
+    assert(s.threeSum(vec) == ret);
 }

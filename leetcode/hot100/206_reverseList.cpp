@@ -24,7 +24,7 @@ public:
     }
 };
 
-TEST(leetcode, reverseList)
+int main()
 {
     Solution s;
 

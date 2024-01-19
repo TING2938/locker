@@ -24,11 +24,11 @@ public:
     }
 };
 
-TEST(leetcode, convert)
+int main()
 {
     Solution s;
 
-    EXPECT_EQ(s.convert("PAYPALISHIRING", 3), "PAHNAPLSIIGYIR");
-    EXPECT_EQ(s.convert("PAYPALISHIRING", 4), "PINALSIGYAHRPI");
-    EXPECT_EQ(s.convert("A", 1), "A");
+    assert(s.convert("PAYPALISHIRING", 3) == "PAHNAPLSIIGYIR");
+    assert(s.convert("PAYPALISHIRING", 4) == "PINALSIGYAHRPI");
+    assert(s.convert("A", 1) == "A");
 }

@@ -64,7 +64,7 @@ public:
     }
 };
 
-TEST(leetcode, mergeKLists)
+int main()
 {
     Solution s;
 

@@ -54,7 +54,7 @@ public:
     }
 };
 
-TEST(leetcode, levelOrder)
+int main()
 {
     Solution s;
 

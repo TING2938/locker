@@ -19,15 +19,15 @@ public:
     }
 };
 
-TEST(leetcode, longestCommonPrefix)
+int main()
 {
     Solution s;
 
     vector<string> strs;
 
     strs = {"flower", "flow", "flight"};
-    EXPECT_EQ(s.longestCommonPrefix(strs), "fl");
+    assert(s.longestCommonPrefix(strs) == "fl");
 
     strs = {"dog", "racecar", "car"};
-    EXPECT_EQ(s.longestCommonPrefix(strs), "");
+    assert(s.longestCommonPrefix(strs) == "");
 }

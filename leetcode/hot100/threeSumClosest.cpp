@@ -45,15 +45,15 @@ public:
     }
 };
 
-TEST(leetcode, threeSumClosest)
+int main()
 {
     Solution s;
 
     vector<int> nums;
 
     nums = {-1, 2, 1, -4};
-    EXPECT_EQ(s.threeSumClosest(nums, 1), 2);
+    assert(s.threeSumClosest(nums, 1) == 2);
 
     nums = {0, 0, 0};
-    EXPECT_EQ(s.threeSumClosest(nums, 1), 0);
+    assert(s.threeSumClosest(nums, 1) == 0);
 }

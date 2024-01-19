@@ -32,11 +32,11 @@ public:
     }
 };
 
-TEST(leetcode, longestPalindrome)
+int main()
 {
     Solution s;
 
-    EXPECT_EQ(s.longestPalindrome("bbbbb"), "bbbbb");
-    EXPECT_EQ(s.longestPalindrome("babad"), "bab");
-    EXPECT_EQ(s.longestPalindrome("cbbd"), "bb");
+    assert(s.longestPalindrome("bbbbb") == "bbbbb");
+    assert(s.longestPalindrome("babad") == "bab");
+    assert(s.longestPalindrome("cbbd") == "bb");
 }

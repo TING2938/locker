@@ -46,13 +46,13 @@ public:
     }
 };
 
-TEST(leetcode, romanToInt)
+int main()
 {
     Solution s;
 
-    EXPECT_EQ(s.romanToInt("III"), 3);
-    EXPECT_EQ(s.romanToInt("IV"), 4);
-    EXPECT_EQ(s.romanToInt("IX"), 9);
-    EXPECT_EQ(s.romanToInt("LVIII"), 58);
-    EXPECT_EQ(s.romanToInt("MCMXCIV"), 1994);
+    assert(s.romanToInt("III") == 3);
+    assert(s.romanToInt("IV") == 4);
+    assert(s.romanToInt("IX") == 9);
+    assert(s.romanToInt("LVIII") == 58);
+    assert(s.romanToInt("MCMXCIV") == 1994);
 }

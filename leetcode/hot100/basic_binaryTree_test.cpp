@@ -56,20 +56,14 @@ void postorderTraversal(const TreeNode* root)
     std::cout << root->value << " ";
 }
 
-TEST(basic_binaryTree, pre)
+int main()
 {
     auto root = makeTree();
     preorderTraversal(root);
-}
 
-TEST(basic_binaryTree, mid)
-{
-    auto root = makeTree();
+    root = makeTree();
     midorderTraversal(root);
-}
 
-TEST(basic_binaryTree, post)
-{
-    auto root = makeTree();
+    root = makeTree();
     postorderTraversal(root);
 }
