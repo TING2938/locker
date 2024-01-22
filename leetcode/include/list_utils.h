@@ -19,7 +19,7 @@ concept ListLike = requires(List l) {
 };
 
 
-template <ListLike List, typename T>
+template <ListLike List = ListNode, typename T>
 auto create_list(initializer_list<T> init)
 {
     auto pre = new List();
