@@ -12,6 +12,17 @@ public:
     vector<vector<int>> permute(vector<int>& nums)
     {
         vector<vector<int>> rets;
+        sort(nums.begin(), nums.end());
+        do {
+            rets.push_back(nums);
+        } while (std::next_permutation(nums.begin(), nums.end()));
+
+        return rets;
+    }
+
+    vector<vector<int>> permute2(vector<int>& nums)
+    {
+        vector<vector<int>> rets;
         add(rets, nums, 0);
         return rets;
     }
@@ -35,5 +46,5 @@ int main()
 {
     Solution s;
     vector<int> nums{1, 2, 3};
-    cout << s.permute(nums) << endl;
+    cout << s.permute2(nums) << endl;
 }
